@@ -1,0 +1,537 @@
+
+sbody, html {
+    height: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+:focus {
+    outline: 0 none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@font-face {
+    font-family: "HattoriHanzoLight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("css/hattori_hanzo-webfont.eot?iefix") format("eot"), url("css/hattori_hanzo-webfont.woff") format("woff"), url("css/hattori_hanzo-webfont.ttf") format("truetype"), url("css/hattori_hanzo-webfont.svg#webfontjulfKoyS") format("svg");
+}
+body {
+    /*background: url("../images/bodyBg.png") repeat-x scroll 0 0 transparent;*/
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+p {
+    font-size: 17px;
+    line-height: 23px;
+    padding: 0 9px 5px;
+}
+a {
+    color: #333333;
+    display: block;
+    float: left;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #333333;
+}
+.sh_clear {
+    clear: both;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "HattoriHanzoLight",Calibri,sans-serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 33px;
+    letter-spacing: 0;
+    line-height: 33px;
+}
+h2 {
+    color: #333333;
+    font-size: 23px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 19px;
+    line-height: 22px;
+}
+h3.sh_widgettitle {
+    margin-bottom: 10px;
+}
+h4 {
+    color: #333333;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+h5 {
+    font-size: 14px;
+    font-weight: normal;
+}
+h6 {
+    color: #333333;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.sh_main {
+    margin: 0 auto;
+    width: 100%;
+}
+.sh_header {
+    background: url("../images/head_bg.png") repeat-x scroll center center transparent;
+    color: #EDEDED;
+    display: block;
+    float: none;
+    height: 36px;
+    width: auto;
+}
+.sh_header ul {
+    display: block;
+    float: right;
+    list-style-type: none;
+}
+.sh_header ul li {
+    display: block;
+    float: left;
+	/*width:75px;*/
+	height:50px;
+}
+.sh_header ul li a {
+    border-left: 1px solid #555555;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 3px 15px;
+    text-align: center;
+}
+.sh_header ul li a:hover {
+    color: #CCCC99;
+}
+.sh_stage {
+    border-bottom: 1px solid #F3F3F3;
+    display: block;
+    float: left;
+    height: 150px;
+    padding: 5px;
+    width: 890px;
+}
+.sh_leftMenu {
+    background-color: #272727;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #1B1B1B;
+    color: #EDEDED;
+    display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 15%;
+}
+.sh_leftMenu ul{
+list-style-type: none;
+}
+.sh_leftMenu ul li {
+    /*border-left: 1px solid #E0E0E0;*/
+    border-top: 1px solid #222222;
+    display: block;
+    float: none;
+    width: auto;
+}
+.sh_leftMenu ul li a {
+    border-bottom: 1px solid #505050;
+    color: #FFFFFF;
+    display: block;
+    float: none;
+    font-size: 15px;
+    padding: 9px 10px;
+    width: auto;
+}
+.sh_canvas {
+    display: block;
+    float: left;
+    height: 450px;
+    width: 700px;
+	margin:9px;
+}
+.tileIcon{
+    display: block;
+    float: left;
+    margin: 15px;
+    width: 64px;
+	height: 76px;
+}
+.tileIcon span{
+    display: block;
+    float: left;
+    width: 64px;
+	height: 64px;
+	background: url("../images/tileIconMask.png") no-repeat scroll center center transparent;
+}
+/****************************************************/
+
+.sh_iosSlider {
+float: right;
+width: 700px;
+height: 450px;
+}
+.sh_iosSlider .sh_slider {
+width: 700px;
+height: 450px;
+}
+.sh_iosSlider .sh_slider .sh_item {
+position: relative;
+top: 0;
+left: 0;
+width: 700px;
+height: 450px;
+margin: 0;
+display:block;
+float:left;
+list-style-type: none;
+}
+/*
+.iosSlider .slider #item1 {
+background: url(../h-slider-1.jpg) no-repeat 50% 0;
+}
+.iosSlider .slider #item2 {
+background: url(../h-slider-2.jpg) no-repeat 50% 0;
+}
+.iosSlider .slider #item3 {
+background: url(../h-slider-3.jpg) no-repeat 50% 0;
+}
+.iosSlider .slider #item4 {
+background: url(../h-slider-4.jpg) no-repeat 50% 0;
+}*/
+.sh_iosSlider .sh_slider .sh_item .sh_text1 {
+position: absolute;
+top: 30px;
+right: 150px;
+opacity: 0;
+filter: alpha(opacity:0);
+background: #000;
+}
+.sh_iosSlider .sh_slider .sh_item .sh_text1 span {
+color: #fff;
+font: bold 50px/60px "Helvetica Neue",Helvetica,Arial,sans-serif;
+padding: 0 8px;
+}
+.sh_iosSlider .sh_slider .sh_item .sh_text2 {
+position: absolute;
+top: 90px;
+right: 0;
+opacity: 0;
+filter: alpha(opacity:0);
+background: #000;
+padding: 5px 7px 7px 7px;
+}
+.sh_iosSlider .sh_slider .sh_item .sh_text2 span {
+color: #fff;
+font: normal 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.sh_iosSliderButtons {
+position: absolute;
+top: 500px;
+height: 10px;
+z-index: 10;
+left: 500px;
+width: auto;
+}
+.sh_iosSliderButtons .sh_button {
+background: url("../images/link-bg.png") no-repeat scroll center top transparent;
+float: left;
+width: 15px;
+height: 15px;
+margin: 0 10px 0 0;
+opacity: 0.25;
+filter: alpha(opacity:25);
+}
+.sh_iosSliderButtons .sh_selected {
+background: url("../images/link-active.png") no-repeat scroll center top transparent;
+opacity: 1;
+filter: alpha(opacity:100);
+} 
+/***********************************************************/
+.sh_subMenuOuter {
+    background: url("../images/subMenuLeftBg.png") no-repeat scroll left center transparent;
+    display: block;
+    float: left;
+    height: 30px;
+    margin: 10px 25px;
+    width: 600px;
+}
+.sh_subMenu {
+    background: url("../images/subMenuRightBg.png") no-repeat scroll right center transparent;
+    display: block;
+    float: left;
+    height: 30px;
+    width: 600px;
+}
+.sh_subMenu ul {
+    background: url("../images/subMenuMiddleBg.png") repeat-x scroll right center transparent;
+    display: block;
+    float: left;
+    height: 30px;
+    list-style-type: none;
+    margin: 0 3px;
+    width: 593px;
+}
+.sh_subMenu ul li a {
+    border-right: 1px solid #CCCCCC;
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0 40px;
+    text-align: left;
+}
+.sh_subMore {
+    background: url("../images/subMore.png") no-repeat scroll 15px center transparent;
+}
+.sh_subfollow {
+    background: url("../images/subfollow.png") no-repeat scroll 15px center transparent;
+}
+.sh_subshelf {
+    background: url("../images/subshelf.png") no-repeat scroll 15px center transparent;
+}
+.sh_subGroup {
+    background: url("../images/subGroup.png") no-repeat scroll 15px center transparent;
+}
+.sh_subSettings {
+    background: url("../images/subsettings.png") no-repeat scroll 15px center transparent;
+}
+.sh_rightDebate {
+}
+.sh_content {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.sh_Ads {
+    background-color: #DDDDDD;
+    display: block;
+    float: left;
+    margin:25px 15px;
+    width: 250px;
+	padding: 15px;
+}
+.sh_bottomBodeOuter {
+    background-color: white;
+    bottom: 0;
+    display: block;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    width: 83%;
+    z-index: 9;
+	margin-left: 16%;
+	margin-right: 1%;
+}
+.sh_bottomBodeleft {
+    background: url("../images/lanchDeskLeft.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 47px;
+    margin-top: 53px;
+    width: 100%;
+}
+.sh_bottomBodeRight {
+    background: url("../images/lanchDeskRight.png") no-repeat scroll right center transparent;
+    display: block;
+    float: left;
+    height: 47px;
+    width: 100%;
+}
+.sh_bottomBodeMiddle {
+    background: url("../images/lanchDeskCenter.png") repeat-x scroll center center transparent;
+    display: block;
+    height: 100%;
+    margin: 0 57px;
+    width: auto;
+}
+.sh_bottomBodeMiddle ul {
+    bottom: 37px;
+    display: block;
+    float: none;
+    height: 84px;
+    left: 0;
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+}
+.sh_bottomBodeMiddle ul li {
+}
+.sh_bottomBodeMiddle ul li a {
+	display: block;
+    float: right;
+    height: 84px;
+    margin: 0 11px;
+    width: 64px;
+}
+.sh_bottomBodeMiddle ul li a span{
+    display: block;
+    float: left;
+    width: 64px;
+	height: 84px;
+	background: url('../images/tileIconLaunchPadMask.png') no-repeat scroll center 0 transparent;
+}
+/*
+.sh_bottomBodeMiddleMenuMask {
+    background: url("../images/mask.png") no-repeat scroll center center transparent;
+    display: block;
+    float: left;
+    height: 178px;
+    text-align: left;
+    width: 128px;
+}*/
+#sh_basket {
+    background: url("../images/Recycle_Bin.png") no-repeat scroll center top transparent;
+    bottom: 25px;
+    display: block;
+    float: right;
+    height: 100px;
+    margin: 0 11px;
+    position: relative;
+    width: 100px;
+    z-index: 10;
+}
+.sh_basketfull{
+    background: url("../images/Recycle_Bin_Full.png") no-repeat scroll center top transparent;
+}
+.sh_setAsHome{
+	background: url("../images/setAsHome.png") no-repeat scroll center top transparent;
+    display: block;
+    float: left;
+    margin: 10px;
+    text-align: left;
+    width: 200px;
+	height:50px;
+}
+.sh_inputRow{
+	display: block;
+    float: left;
+    padding: 10px 25px;
+    width: 310px;
+}
+.sh_inputRow input{
+float: right;
+width: 200px;
+}
+#sh_validationInfo{
+ display:block;
+ float:left;
+ padding:5px;
+ width:350px;
+ text-align:center;
+ color: maroon;
+ font-size: 13px;
+ line-height: 13px;
+ height: 15px;
+}
+#sh_reg_validationInfo{
+ display:block;
+ float:left;
+ padding:5px;
+ width:350px;
+ text-align:center;
+ color: maroon;
+ font-size: 13px;
+ line-height: 13px;
+ height: 15px;
+}
+.sh_footer {
+    display: block;
+    float: left;
+    height: 30px;
+    padding-top: 15px;
+    text-align: center;
+    width: 900px;
+}
+#sh_copyrightLine {
+    clear: both;
+    color: #999999;
+    font-size: 10px;
+    line-height: 32px;
+    margin: 0 auto;
+    text-align: right;
+    width: 980px;
+}
+.sh_iconDesc{
+display:block;
+overflow:hidden;
+width:64px;
+height:12px;
+font-size:10px;
+text-align:center;
+color:WindowText;
+}
+.sh_launchIconDesc{
+display:block;
+overflow:hidden;
+width:64px;
+height:12px;
+font-size:10px;
+text-align:center;
+color:snow;
+position:relative;
+top:-16px;
+z-index:10px;
+}
+
+.sh_Logo{
+	display: block;
+    float: left;
+    margin: 5% 15%;
+    text-align: center;
+    width: 70%;
+}
+.sh_left_top_menu{
+}
+
+/*       vertical scroll bar              */
+
+
+#scrollbar1 { /*width: 520px;*/ clear: both; /*margin: 20px 0 10px;*/ }
+#scrollbar1 .viewport { /*width: 500px; height: 200px;*/ height: 490px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; width: 100%;}
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { 
+background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(85, 85, 85, 0.6);
+    border-radius: 7px 7px 7px 7px;}
+#scrollbar1 .scrollbar { position: relative; float: right; width: 9px; }
+#scrollbar1 .track { background-color: rgba(200, 200, 200, 0.1); height: 100%; width:7px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { height: 20px; width: 5px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar1 .thumb .end { overflow: hidden; height: 100%; width: 100%; /*overflow: hidden; height: 5px; width: 5px; */}
+#scrollbar1 .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
